@@ -7,17 +7,13 @@
     </v-toolbar-title>
     
     <v-divider vertical></v-divider>
-
     <v-btn
       stacked
-      variant="text"
-      @click = "openOtherComponent()">
-    
-      <!-- <svg-icon type="mdi" :path="mdiAccount"></svg-icon> -->
-
+      variant="text">
+      <v-icon>mdi-account</v-icon>
       Вход
-    </v-btn>
-    
+     </v-btn>
+
   </v-toolbar>
 
 <div class="my-block">
@@ -78,29 +74,58 @@
 </style>
 
 <script  lang="ts">
-  import {mdiAccount} from '@mdi/js';
+  
   import { start } from 'repl';
-  // import SvgIcon from '@jamescoyle/vue-icon';
   import { defineComponent } from 'vue';
   import { useRoute } from 'vue-router';
   import router from '@/router';
   
+  
+  export default {
+  name: "StartPage",
+  };
+  
+//   export default defineComponent({
+//   setup() {
+//     const route = useRoute();
 
-  export default defineComponent({
-  setup() {
-    const route = useRoute();
+//     const openOtherComponent = () => {
+//       router.push({ name: 'MainPage' });
+//       // window.open('https://vuetifyjs.com/en/', '_blank');     При нажатии на кнопку сайт открывает
+//     };
 
-    const openOtherComponent = () => {
-      router.push({ name: 'MainPage' });
-      // window.open('https://vuetifyjs.com/en/', '_blank');     При нажатии на кнопку сайт открывает
-    };
+//     return {
+//       openOtherComponent,
+//     };
+//   },
+// });
 
-    return {
-      openOtherComponent,
-    };
-  },
-});
-
+  
 
 </script>
+
+
+<!-- 
+<router-link to="/mainpage">
+  <v-btn
+    stacked
+    variant="text">
+    <svg-icon type="mdi" :path="mdiAccount"></svg-icon>
+
+    Вход
+  </v-btn>
+</router-link> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 

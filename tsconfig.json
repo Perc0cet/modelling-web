@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    // первые 2
+    "noImplicitAny": false,
+    "allowJs": true,
     "baseUrl": ".",
     "target": "ESNext",
     "useDefineForClassFields": true,

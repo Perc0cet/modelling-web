@@ -109,6 +109,13 @@
   "resolved" "https://registry.npmjs.org/@types/semver/-/semver-7.3.13.tgz"
   "version" "7.3.13"
 
+"@types/vue-router@^2.0.0":
+  "integrity" "sha512-E454lQ6tp9ftVWdZ8VGZpRcIV4YeqVAcx/uifl3P1GGwscYsxOFdYfgIuKasKO0Fm6Np2JM/L378D3bcRQE9hg=="
+  "resolved" "https://registry.npmjs.org/@types/vue-router/-/vue-router-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "vue-router" "*"
+
 "@types/webfontloader@^1.6.35":
   "integrity" "sha512-IJlrsiDWq6KghQ7tPlL5tcwSUyOxLDceT+AFUY7Ylj0Fcv3/h3QkANqQxZ0B5mEpEKxhTw76vDmvrruSMV9n9Q=="
   "resolved" "https://registry.npmjs.org/@types/webfontloader/-/webfontloader-1.6.35.tgz"
@@ -1378,7 +1385,7 @@
     "lodash" "^4.17.21"
     "semver" "^7.3.6"
 
-"vue-router@^4.0.0":
+"vue-router@*", "vue-router@^4.1.6":
   "integrity" "sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.1.6.tgz"
   "version" "4.1.6"
