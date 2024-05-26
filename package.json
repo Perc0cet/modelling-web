@@ -1,6 +1,7 @@
 {
   "name": "modelling-web",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -11,7 +12,11 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "7.0.96",
     "@types/vue-router": "^2.0.0",
+    "@vue-flow/background": "^1.3.0",
+    "@vue-flow/core": "^1.33.8",
+    "axios": "^1.7.0",
     "roboto-fontface": "*",
+    "uuid": "^9.0.1",
     "vue": "^3.2.38",
     "vue-router": "^4.1.6",
     "vuetify": "^3.0.0",

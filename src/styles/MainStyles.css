@@ -1,0 +1,65 @@
+.my-button1 {
+    text-transform: none;
+    background-color: rgb(253, 253, 120);
+    margin-right: 100px;
+    font-family: Poppins;
+  }
+
+  .my-button2 {
+    text-transform: none;
+    font-family: Poppins;
+  }
+
+  .my-button3 {
+    text-transform: none;
+    background-color: rgb(204, 204, 204);
+    margin-right: 20px;
+    font-family: Poppins;
+  }
+
+  .my-button4 {
+    text-transform: none;
+    background-color: #00C853;
+    font-family: Poppins;
+  }
+
+  .my-button5 {
+    text-transform: none;
+    background-color: rgb(196, 5, 5);
+    margin-left: 40px;
+    font-family: Poppins;
+  }
+
+  .mp {
+    margin-top: 40px;
+    overflow-y: scroll;
+  }
+
+  .fixedBottom {
+    position: fixed !important;
+    bottom: 0 !important;
+    margin-bottom: 50px;
+  }
+
+  .selected-item {
+    background-color: #D3D3D3; 
+    color: #000; 
+  }
+  .app-bar-border {
+    border: 1px solid #388E3C; /* Green */
+  }
+
+  .v-container {
+    max-width: 100%;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+  span {
+    color: #ffffff;
+  }
+
+  titleSettings {
+    color: #000000;
+  }
