@@ -166,9 +166,7 @@ export default defineComponent({
     openFilePicker() {
       const input = document.createElement('input');
       input.type = 'file';
-
       input.onchange = (e: any) => {
-        // Получаем выбранный файл
         const file = e.target.files[0];
 
         // Отправляем файл на бэкенд
@@ -176,14 +174,8 @@ export default defineComponent({
           file,
           (response) => {
             console.log('Сохранено успешно:', response);
-
-            // Предположим, что ответ содержит объект с `id` и `name`
             const { id, name } = response.data;
-
-            // Создаем новый элемент с полученными данными
             const newItem = { name, id, props: { color: 'primary' } };
-
-            // Добавляем новый элемент в список
             this.items.push(newItem);
           },
           (error) => {
@@ -226,15 +218,15 @@ export default defineComponent({
         // Скрываем appbar после удаления элемента
         this.showAppBar = false;
       
-      serviceAPIModels.delete(
-        selectedItemId,
-        (response) => {
-            console.log('Удалено успешно:', response);
-        },
-        (error) => {
-            console.error('Ошибка удаления:', error);
-        }
-    );
+        serviceAPIModels.delete(
+          selectedItemId,
+          (response) => {
+              console.log('Удалено успешно:', response);
+          },
+          (error) => {
+              console.error('Ошибка удаления:', error);
+          }
+        );
       }
     }
   }
